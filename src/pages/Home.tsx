@@ -1,9 +1,10 @@
 import { AppShell } from '@mantine/core';
 
+import MyNavbar from '../components/MyNavbar';
+
 const Home = () => {
   return (
-    <AppShell>
-      
+    <AppShell navbar={<MyNavbar />}>
     </AppShell>
   );
 }
