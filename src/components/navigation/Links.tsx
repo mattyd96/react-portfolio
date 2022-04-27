@@ -1,11 +1,7 @@
 import { Group, MediaQuery } from '@mantine/core';
 import React from 'react';
 
-type listProps = {
-  display: string;
-}
-
-const Links = ({ display } : listProps) => {
+const Links: React.FC = () => {
   return (
     <MediaQuery smallerThan='sm' styles={{display: 'none'}}>
       <Group direction='row'>
