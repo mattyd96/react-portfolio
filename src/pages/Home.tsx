@@ -1,11 +1,8 @@
-import { AppShell } from '@mantine/core';
+import MyNavbar from '../components/navigation/Navbar';
 
-import MyNavbar from '../components/Navbar';
-
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <AppShell header={<MyNavbar />}>
-    </AppShell>
+    <MyNavbar />
   );
 }
 

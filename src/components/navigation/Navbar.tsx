@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Header, MediaQuery, Menu, MenuItem, Text, useMantineTheme } from "@mantine/core";
 import { useMediaQuery } from '@mantine/hooks';
 
-import ThemeSwitch from "./buttons/ThemeSwitch";
-import Links from "./navigation/Links";
-import MobileMenu from "./navigation/MobileMenu";
+import ThemeSwitch from "../buttons/ThemeSwitch";
+import Links from "./Links";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   const [opened, setOpened] = useState(false);
