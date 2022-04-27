@@ -1,10 +1,10 @@
 import { Header, Text, useMantineTheme } from "@mantine/core";
 
 import ThemeSwitch from "../buttons/ThemeSwitch";
-import Links from "./Links";
+import Links from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   // theme
   const theme = useMantineTheme();
 

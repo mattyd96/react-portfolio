@@ -1,7 +1,7 @@
 import { Menu, MenuItem, MediaQuery } from '@mantine/core';
 
 
-const MobileMenu = () => {
+const MobileMenu: React.FC = () => {
   return (
     <MediaQuery largerThan='sm' styles={{ display: 'none' }}>
       <Menu>

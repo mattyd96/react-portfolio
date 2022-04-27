@@ -1,7 +1,7 @@
 import { Group, MediaQuery } from '@mantine/core';
 import React from 'react';
 
-const Links: React.FC = () => {
+const DesktopMenu: React.FC = () => {
   return (
     <MediaQuery smallerThan='sm' styles={{display: 'none'}}>
       <Group direction='row'>
@@ -14,4 +14,4 @@ const Links: React.FC = () => {
   );
 }
 
-export default Links;
+export default DesktopMenu;
