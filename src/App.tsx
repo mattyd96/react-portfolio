@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
 
+import './App.css'
 import Home from './pages/Home';
 
 function App() {

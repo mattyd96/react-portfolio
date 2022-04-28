@@ -2,7 +2,7 @@ import { ActionIcon, useMantineColorScheme, useMantineTheme } from '@mantine/cor
 import { FiSun } from 'react-icons/fi';
 import { BsMoonStars } from 'react-icons/bs';
 
-const ThemeSwitch = () => {
+const ThemeSwitch: React.FC = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const theme = useMantineTheme();
   const dark = colorScheme === 'dark';
@@ -12,7 +12,7 @@ const ThemeSwitch = () => {
   return (
     <ActionIcon
       variant="filled"
-      color={dark ?  darkColor: lightColor}
+      color={dark ?  darkColor : lightColor}
       onClick={() => toggleColorScheme()}
       title="Toggle color scheme"
     >
