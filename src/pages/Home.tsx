@@ -1,11 +1,11 @@
-import MyNavbar from '../components/navigation/Navbar';
 import Masthead from '../components/sections/Masthead';
+import About from '../components/sections/About';
 
 const Home: React.FC = () => {
   return (
     <>
-      <MyNavbar />
       <Masthead />
+      <About />
     </>
   );
 }

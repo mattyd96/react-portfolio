@@ -1,29 +1,23 @@
-import { Center, Grid, Title } from "@mantine/core";
+import { MediaQuery, Text } from "@mantine/core";
+import { BsCircleFill } from "react-icons/bs";
+
+import Navbar from '../navigation/Navbar';
 
 
 const Masthead: React.FC = () => {
   return (
-    <>
-      <section style={{maxWidth: '20rem', display: 'grid', justifyItems: 'center', justifyContent: 'center', gridTemplateColumns: '1fr', gridTemplateRows: '1fr', overflow: 'hidden'}}>
-        <video autoPlay loop muted playsInline style={{objectFit: 'cover', gridColumn: '1/2', gridRow: '1/2'}}>
-          <source src="/assets/ocean2.mp4" type='video/mp4; codecs=hvc1' />
-          <source src="/assets/ocean.webm" type='video/webm; codecs=vp9' />
-        </video>
-        <div style={{ gridColumn: '1/2', gridRow: '1/2', zIndex: 100, backgroundColor: 'white',  mixBlendMode: 'screen', textAlign: 'center'}}>
-          <Title style={{fontSize: '25rem', fontWeight: 900, fontFamily:'Poppins'}}>M</Title>
-        </div>  
-      </section>
-      <section style={{maxWidth: '10rem', display: 'grid', justifyItems: 'center', justifyContent: 'center', gridTemplateColumns: '1fr', gridTemplateRows: '1fr'}}>
-        <video autoPlay loop muted playsInline style={{objectFit: 'cover', gridColumn: '1/2', gridRow: '1/2'}}>
-          <source src="/assets/ocean2.mp4" type='video/mp4; codecs=hvc1' />
-          <source src="/assets/ocean.webm" type='video/webm; codecs=vp9' />
-        </video>
-        <div style={{width: '100%', gridColumn: '1/2', gridRow: '1/2', zIndex: 100, backgroundColor: 'white',  mixBlendMode: 'screen', textAlign: 'center'}}>
-          <Title order={1} style={{fontSize: '25rem', fontWeight: 900}}>M</Title>
-        </div>  
-      </section>
-    </>
-    
+    <section style={{height: '100vh'}}>
+      <Navbar />
+      <MediaQuery smallerThan={'sm'} styles={{}}>
+        <section style={{height: '90%', display: 'flex',flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+            <img src="/assets/heroLogo.svg" alt="MD logo" style={{flexGrow: 1}}/>
+            <div>
+              <h2>Matthew Durflinger</h2>
+              <p>Fullstack Development Portfolio</p>
+            </div> 
+        </section>
+      </MediaQuery>
+    </section>
   );
 }
 
