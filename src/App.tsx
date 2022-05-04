@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
 
 import './App.css'
-import Home from './pages/Home';
+import Router from './router/Router';
 
 function App() {
   const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
@@ -12,7 +12,7 @@ function App() {
   return (
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
       <MantineProvider theme={{ colorScheme }}>
-        <Home />
+        <Router />
       </MantineProvider>
     </ColorSchemeProvider>
   );
