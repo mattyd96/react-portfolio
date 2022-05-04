@@ -1,10 +1,19 @@
 import { Group, MediaQuery } from '@mantine/core';
-import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const DesktopMenu: React.FC = () => {
+function DesktopMenu() {
   return (
     <MediaQuery smallerThan='sm' styles={{display: 'none'}}>
       <Group direction='row'>
+        <NavLink style={({ isActive }) => {
+          return {
+            color: isActive ? "blue" : ""
+          }
+        }}
+        to='/'
+        >
+          Home
+        </NavLink>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#Resume">Resume</a>
