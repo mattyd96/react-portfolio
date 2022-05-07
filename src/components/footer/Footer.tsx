@@ -5,7 +5,7 @@ import { BiMailSend } from "react-icons/bi";
 function Footer() {
 
   return(
-    <Foot height={'3rem'} mt='2rem' style={{borderTop: 'none'}}>
+    <Foot height={'3rem'} mt='2rem' pb='4rem' style={{borderTop: 'none'}}>
       <Group align='center' position='center'>
         <ActionIcon component="a" href="https://github.com/mattyd96" target='_blank' size='xl' title="Gthub Link">
           <FaGithub size='2rem' />

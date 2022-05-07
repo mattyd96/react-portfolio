@@ -6,13 +6,10 @@ const ThemeSwitch: React.FC = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const theme = useMantineTheme();
   const dark = colorScheme === 'dark';
-  const darkColor : string = theme.colors.gray[5];
-  const lightColor : string = theme.colors.dark[8];
 
   return (
     <ActionIcon
       variant="filled"
-      color={dark ?  darkColor : lightColor}
       onClick={() => toggleColorScheme()}
       title="Toggle color scheme"
     >
