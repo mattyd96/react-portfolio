@@ -1,23 +1,28 @@
 import { Group, MediaQuery } from '@mantine/core';
 import { NavLink } from 'react-router-dom';
 
+import './Navbar.css';
+
 function DesktopMenu() {
+  
   return (
     <MediaQuery smallerThan='sm' styles={{display: 'none'}}>
-      <Group direction='row'>
-        <NavLink style={({ isActive }) => {
-          return {
-            color: isActive ? "blue" : ""
-          }
-        }}
-        to='/'
-        >
+      <Group direction='row'className='nav'>
+        <NavLink className={({ isActive }) => isActive ? 'active' : 'notActive'} to='/'>
           Home
         </NavLink>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#Resume">Resume</a>
-        <a href="#Contact">Contact</a>
+        <NavLink className={({ isActive }) => isActive ? 'active' : 'notActive'} to='/about'>
+          About
+        </NavLink>
+        <NavLink className={({ isActive }) => isActive ? 'active' : 'notActive'} to='/projects'>
+          Projects
+        </NavLink>
+        <NavLink className={({ isActive }) => isActive ? 'active' : 'notActive'} to='/resume'>
+          Resume
+        </NavLink>
+        <NavLink className={({ isActive }) => isActive ? 'active' : 'notActive'} to='/contact'>
+          Contact
+        </NavLink>
       </Group>
     </MediaQuery>
   );

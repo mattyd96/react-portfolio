@@ -1,0 +1,12 @@
+.active {
+  text-decoration: none;
+  color: rgb(105, 105, 174);
+}
+
+.notActive {
+  color: black;
+}
+
+.nav a {
+  text-decoration: none;
+}
