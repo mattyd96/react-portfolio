@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
   const white : string = theme.colors.gray[5];
 
   return (
-    <Header height="md" px='2rem' py='1rem' style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+    <Header height="md" py='1rem' style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: 'none'}}>
       <Text color={dark ? white : black}>Matthew Durflinger</Text>
       <section style={{display: 'flex', gap: '1rem'}}>
         <Links />

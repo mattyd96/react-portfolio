@@ -36,7 +36,7 @@ function ProjectCard(props:Info) {
         {props.desc}
       </Text>
 
-      <Group>
+      <Group grow>
         <Button component='a' href={props.github} variant="filled" color="blue" style={{ marginTop: '.5rem' }}>
           Github
         </Button>
