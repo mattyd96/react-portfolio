@@ -1,4 +1,4 @@
-const About: React.FC = () => {
+function AboutSection() {
   return (
     <section>
       <h2>About Me</h2>
@@ -7,4 +7,4 @@ const About: React.FC = () => {
   );
 }
 
-export default About;
+export default AboutSection;

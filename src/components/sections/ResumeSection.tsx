@@ -1,4 +1,4 @@
-const Resume: React.FC = () => {
+function ResumeSection() {
   return (
     <section>
       <h2>Resume Me</h2>
@@ -7,4 +7,4 @@ const Resume: React.FC = () => {
   );
 }
 
-export default Resume;
+export default ResumeSection;

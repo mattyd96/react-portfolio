@@ -1,6 +1,12 @@
+import Navbar from "../components/navigation/Navbar";
+import AboutSection from "../components/sections/AboutSection";
+
 function About() {
   return (
-    <h1>About</h1>
+    <>
+      <Navbar />
+      <AboutSection />
+    </>
   );
 }
 

@@ -1,4 +1,4 @@
-const Contact: React.FC = () => {
+function ContactSection() {
   return (
     <section>
       <h2>Contact Me</h2>
@@ -7,4 +7,4 @@ const Contact: React.FC = () => {
   );
 }
 
-export default Contact;
+export default ContactSection;

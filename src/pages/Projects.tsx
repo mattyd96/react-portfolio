@@ -1,5 +1,5 @@
 import Navbar from "../components/navigation/Navbar";
-import ProjectSection from "../components/sections/Projects";
+import ProjectSection from "../components/sections/ProjectSection";
 
 function Projects(){
   return (
