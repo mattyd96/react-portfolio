@@ -4,7 +4,7 @@ import ThemeSwitch from "../buttons/ThemeSwitch";
 import Links from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 
-const Navbar: React.FC = () => {
+function Navbar() {
   // theme
   const theme = useMantineTheme();
 

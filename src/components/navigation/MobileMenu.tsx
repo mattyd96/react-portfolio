@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 
-const MobileMenu: React.FC = () => {
+function MobileMenu() {
   return (
     <MediaQuery largerThan='sm' styles={{ display: 'none' }}>
       <Menu trigger='hover' className='nav'>

@@ -1,6 +1,6 @@
 import Masthead from '../components/sections/Masthead';
 
-const Home: React.FC = () => {
+function Home() {
   return (
     <Masthead />
   );
