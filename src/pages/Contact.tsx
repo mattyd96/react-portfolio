@@ -1,3 +1,4 @@
+import Footer from "../components/footer/Footer";
 import Navbar from "../components/navigation/Navbar";
 import ContactSection from "../components/sections/ContactSection";
 
@@ -6,6 +7,7 @@ function Contact() {
     <>
       <Navbar />
       <ContactSection />
+      <Footer />
     </>
   );
 }
