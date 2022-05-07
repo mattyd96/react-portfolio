@@ -11,7 +11,7 @@ function App() {
     
   return (
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-      <MantineProvider theme={{ colorScheme }}>
+      <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
         <Router />
       </MantineProvider>
     </ColorSchemeProvider>

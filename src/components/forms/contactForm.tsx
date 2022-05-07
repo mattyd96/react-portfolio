@@ -34,6 +34,7 @@ function ContactForm() {
 
   return (
     <Box sx={{ width: 'min(calc(100% - 2rem), 35rem)'}} mx="auto">
+      <h2>Contact Me</h2>
       <form onSubmit={submit}>
         <TextInput
           required
