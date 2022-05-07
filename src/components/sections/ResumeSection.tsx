@@ -1,7 +1,7 @@
 function ResumeSection() {
   return (
     <section>
-      <h2>Resume Me</h2>
+      <h2>Resume</h2>
       <p></p>
     </section>
   );
