@@ -6,7 +6,7 @@ import projects from '../../data/projects.json';
 function ProjectSection() {
 
   const cards : JSX.Element[] = projects.map((project) : any =>
-    <Grid.Col span={2} key={project.id}>
+    <Grid.Col xs={6} sm={4} md={4} lg={3} key={project.id}>
       <ProjectCard {...project} year="2022"/>
     </Grid.Col>
   );
@@ -15,7 +15,7 @@ function ProjectSection() {
   return (
     <section>
       <h2>Projects</h2>
-      <Grid>
+      <Grid align='stretch'>
         {cards}
       </Grid>
     </section>
