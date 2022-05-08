@@ -1,8 +1,6 @@
 import { z } from 'zod';
 import { useForm, zodResolver } from '@mantine/form';
 import { TextInput, Button, Box, Group, Textarea } from '@mantine/core';
-import e from 'express';
-import React from 'react';
 
 const schema = z.object({
   name: z.string().min(2, { message: 'Name should have at least 2 letters' }),

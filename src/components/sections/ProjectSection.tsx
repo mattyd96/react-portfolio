@@ -2,7 +2,6 @@ import { Grid } from "@mantine/core";
 import ProjectCard from "../card/ProjectCard";
 
 import projects from '../../data/projects.json';
-
 function ProjectSection() {
 
   const cards : JSX.Element[] = projects.map((project) : any =>

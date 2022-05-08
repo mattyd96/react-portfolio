@@ -1,5 +1,3 @@
-import { MediaQuery, Text } from "@mantine/core";
-import { BsCircleFill } from "react-icons/bs";
 import Footer from "../footer/Footer";
 
 import Navbar from '../navigation/Navbar';
