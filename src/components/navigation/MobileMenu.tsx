@@ -9,27 +9,27 @@ function MobileMenu() {
     <MediaQuery largerThan='sm' styles={{ display: 'none' }}>
       <Menu trigger='hover' className='nav'>
         <MenuItem>
-          <NavLink className={({ isActive }) => isActive ? 'active' : 'notActive'} to='/'>
+          <NavLink className={({ isActive }) => isActive ? 'active' : ''} to='/'>
             Home
           </NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink className={({ isActive }) => isActive ? 'active' : 'notActive'} to='/about'>
+          <NavLink className={({ isActive }) => isActive ? 'active' : ''} to='/about'>
             About
           </NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink className={({ isActive }) => isActive ? 'active' : 'notActive'} to='/projects'>
+          <NavLink className={({ isActive }) => isActive ? 'active' : ''} to='/projects'>
             Projects
           </NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink className={({ isActive }) => isActive ? 'active' : 'notActive'} to='/resume'>
+          <NavLink className={({ isActive }) => isActive ? 'active' : ''} to='/resume'>
             Resume
           </NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink className={({ isActive }) => isActive ? 'active' : 'notActive'} to='/contact'>
+          <NavLink className={({ isActive }) => isActive ? 'active' : ''} to='/contact'>
             Contact
           </NavLink>
         </MenuItem>

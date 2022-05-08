@@ -1,12 +1,8 @@
-.active {
-  text-decoration: none;
-  color: rgb(105, 105, 174);
-}
-
-.notActive a {
-  color: black;
-}
-
 .nav a {
   text-decoration: none;
+  color: inherit;
+}
+
+.nav .active {
+  color: rgb(105, 105, 174);
 }
