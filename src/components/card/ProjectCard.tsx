@@ -17,7 +17,7 @@ function ProjectCard(props:Info) {
 
   return (
     <Card shadow="sm" p="lg">
-      <Card.Section component="a" href="https://mantine.dev" target="_blank">
+      <Card.Section>
         <Image
           src={props.image}
           height={160}
@@ -37,11 +37,11 @@ function ProjectCard(props:Info) {
       </Text>
 
       <Group grow>
-        <Button component='a' href={props.github} variant="filled" color="blue" style={{ marginTop: '.5rem' }}>
+        <Button component='a' href={props.github} target="_blank" variant="filled" color="blue" style={{ marginTop: '.5rem' }}>
           Github
         </Button>
         {props.website && 
-          <Button component='a' href={props.website} variant="filled" color="blue" style={{ marginTop: '.5rem' }}>
+          <Button component='a' href={props.website} target="_blank" variant="filled" color="blue" style={{ marginTop: '.5rem' }}>
             Site
           </Button>
         }
