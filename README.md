@@ -1,4 +1,4 @@
-# React [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# React Portfolio [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -31,7 +31,7 @@ npm start
 
 ## Live Site
 
-[]()
+[https://mattyd96.github.io/react-portfolio](https://mattyd96.github.io/react-portfolio)
 
 
 ## License
